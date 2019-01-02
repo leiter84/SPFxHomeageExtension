@@ -1,0 +1,23 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/core-build/serve.schema.json",
+  "port": 4321,
+  "https": true,
+  "serveConfigurations": {
+    "default": {
+      "pageUrl": "https://volvogroup.sharepoint.com/sites/coll-mobilecoe",
+      "customActions": {
+        "3f7a8bc5-65a6-4559-a642-2d48112f2b25": {
+          "location": "ClientSideExtension.ApplicationCustomizer"
+        }
+      }
+    },
+    "homepage": {
+      "pageUrl": "https://volvogroup.sharepoint.com/sites/coll-mobilecoe",
+      "customActions": {
+        "3f7a8bc5-65a6-4559-a642-2d48112f2b25": {
+          "location": "ClientSideExtension.ApplicationCustomizer"
+        }
+      }
+    }
+  }
+}

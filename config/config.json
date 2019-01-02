@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "homepage-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/homepage/HomepageApplicationCustomizer.js",
+          "manifest": "./src/extensions/homepage/HomepageApplicationCustomizer.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "HomepageApplicationCustomizerStrings": "lib/extensions/homepage/loc/{locale}.js"
+  }
+}

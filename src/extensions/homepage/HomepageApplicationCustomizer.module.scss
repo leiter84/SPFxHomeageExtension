@@ -1,0 +1,19 @@
+.customLinks {
+  display: flex;
+  flex-direction: row;
+  flex: 3;
+  align-items: center;
+  justify-content: flex-end;
+
+  div {
+    padding: 2rem;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  img {
+    height: 1.5rem;
+  }
+}
