@@ -4,6 +4,6 @@
         Title="Homepage"
         Location="ClientSideExtension.ApplicationCustomizer"
         ClientSideComponentId="3f7a8bc5-65a6-4559-a642-2d48112f2b25"
-        ClientSideComponentProperties="{&quot;testMessage&quot;:&quot;Test message&quot;}">
+        >
     </CustomAction>
 </Elements>
