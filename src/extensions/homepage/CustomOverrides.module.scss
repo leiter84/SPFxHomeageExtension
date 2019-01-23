@@ -11,4 +11,11 @@
     min-height: 108px !important;
     max-height: 108px !important;
   }
+
+  div[class*="mainRow"] {
+    height: 116px !important;
+  }
+  /* div[class*="belowSearchBox"] {
+    display: none !important;
+  } */
 }
