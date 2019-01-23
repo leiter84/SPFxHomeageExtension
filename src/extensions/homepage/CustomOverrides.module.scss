@@ -6,4 +6,9 @@
   div[class*="sideActionsWrapper"] {
     display: none !important;
   }
+
+  img[class*="logoImg"] {
+    min-height: 108px !important;
+    max-height: 108px !important;
+  }
 }
