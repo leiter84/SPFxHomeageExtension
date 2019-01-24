@@ -20,7 +20,8 @@
     border-left: none !important;
   }
 
-  /* div[class*="belowSearchBox"] {
+  div[class^="titleSubcell"],
+  div[class^="adjacentTitleSubcell"] {
     display: none !important;
-  } */
+  }
 }
