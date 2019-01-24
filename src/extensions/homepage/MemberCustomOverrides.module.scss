@@ -1,9 +1,7 @@
 :global {
-  div[name="Site Contents"] {
-    display: none !important;
-  }
-
-  div.ms-Nav-compositeLink[name="Edit"] {
+  div[name="Site Contents"],
+  div.ms-Nav-compositeLink[name="Edit"],
+  div.LeftPane-notificationArea {
     display: none !important;
   }
 }

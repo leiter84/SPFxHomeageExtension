@@ -7,10 +7,9 @@
   },
   "scripts": {
     "start": "gulp serve",
-    "build": "gulp bundle",
     "clean": "gulp clean",
     "test": "gulp test",
-    "dist": "gulp bundle --ship && gulp package-solution --ship"
+    "build": "gulp bundle --ship && gulp package-solution --ship"
   },
   "dependencies": {
     "@microsoft/decorators": "1.7.1",
