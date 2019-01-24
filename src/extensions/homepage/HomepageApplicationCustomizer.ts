@@ -30,6 +30,10 @@ export default class HomepageApplicationCustomizer extends BaseApplicationCustom
     if (permissions.length === 0) {
       require("./BusinessCustomOverrides.module.scss");
     }
+    /* CoE Members should see just one record from Permissions list */
+    if (permissions.length === 1) {
+      require("./MemberCustomOverrides.module.scss");
+    }
 
     const titleBarElement: any = document.querySelectorAll(
       "div[class^='mainRow']"
