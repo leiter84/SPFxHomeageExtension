@@ -8,7 +8,7 @@ This is where you include your WebPart documentation.
 git clone the repo
 yarn
 yarn global add gulp
-gulp serve
+yarn start
 ```
 
 This package produces the following:
