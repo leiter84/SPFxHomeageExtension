@@ -24,4 +24,12 @@
   div[class^="adjacentTitleSubcell"] {
     display: none !important;
   }
+
+  div[class*="o365cs-flexPane-overlay"] {
+    background-color: #313131 !important;
+  }
+
+  div[class*="o365cs-flexPane-overlay"] * {
+    color: white !important;
+  }
 }
