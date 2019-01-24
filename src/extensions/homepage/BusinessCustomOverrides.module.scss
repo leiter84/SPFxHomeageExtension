@@ -1,0 +1,9 @@
+:global {
+  div.commandBarWrapper {
+    display: none !important;
+  }
+
+  div[class*="belowSearchBox"] {
+    display: none !important;
+  }
+}

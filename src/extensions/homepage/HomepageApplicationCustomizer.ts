@@ -4,6 +4,7 @@ import {
   PlaceholderContent,
   PlaceholderName
 } from "@microsoft/sp-application-base";
+import { SPHttpClient, SPHttpClientResponse } from "@microsoft/sp-http";
 
 import styles from "./HomepageApplicationCustomizer.module.scss";
 
@@ -14,8 +15,22 @@ export default class HomepageApplicationCustomizer extends BaseApplicationCustom
   IHomepageApplicationCustomizerProperties
 > {
   @override
-  public onInit(): Promise<void> {
-    require("./CustomOverrides.module.scss");
+  public async onInit(): Promise<any> {
+    require("./CommonCustomOverrides.module.scss");
+
+    const response: SPHttpClientResponse = await this.context.spHttpClient.get(
+      this.context.pageContext.web.absoluteUrl +
+        "/_api/web/lists/GetByTitle('VolvoSPFxPermissions')/Items",
+      SPHttpClient.configurations.v1
+    );
+    const jsonItems = await response.json();
+    const permissions = jsonItems.value;
+
+    /* Business users shouldn't see any records from Permissions list */
+    if (permissions.length === 0) {
+      require("./BusinessCustomOverrides.module.scss");
+    }
+
     const titleBarElement: any = document.querySelectorAll(
       "div[class^='mainRow']"
     )[0];
