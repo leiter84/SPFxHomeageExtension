@@ -3,10 +3,6 @@
     display: none !important;
   }
 
-  div[class*="sideActionsWrapper"] {
-    display: none !important;
-  }
-
   img[class*="logoImg"] {
     min-height: 108px !important;
     max-height: 108px !important;
@@ -21,7 +17,18 @@
   }
 
   div[class^="titleAndNavWrapper"],
-  div[class^="logoCell"] {
+  div[class^="logoCell"],
+  div[class*="sideActionsWrapper"] {
     display: none !important;
+  }
+
+  div[class*="belowSearchBox"],
+  nav[class^="ms-Nav"] {
+    min-width: 207px !important;
+    width: auto !important;
+  }
+
+  div[class^="searchBox"] {
+    width: inherit !important;
   }
 }
