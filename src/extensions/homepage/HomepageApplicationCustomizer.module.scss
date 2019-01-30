@@ -1,9 +1,11 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+
 .customLinks {
   display: flex;
   flex-direction: row;
   flex: 3;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 
   div {
     padding: 1rem;
@@ -15,12 +17,8 @@
   }
   a {
     text-decoration: none;
-    color: white;
+    color: $ms-color-themePrimary;
     flex: 1;
-  }
-
-  img {
-    height: 1.5rem;
   }
 
   span {

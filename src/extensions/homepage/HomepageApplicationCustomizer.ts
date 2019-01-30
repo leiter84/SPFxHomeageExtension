@@ -79,21 +79,31 @@ export default class HomepageApplicationCustomizer extends BaseApplicationCustom
     if (existingJiraDivs.length === 0) {
       const jiraDivElement: any = document.createElement("div");
       jiraDivElement.classList.add(styles.customLinks);
+
+      const logoPath =
+        this.context.pageContext.web.absoluteUrl +
+        "/SiteAssets/_mcoe_logotype_black.png";
+
       jiraDivElement.innerHTML = `
       <div>
-        <a href="https://apps.volvogroup.com/" target="_blank">
-          <span>App Portal</span>
-        </a>
+        <img src="${logoPath}" />
       </div>
       <div>
-        <a href="https://confluence.it.volvo.net/pages/viewpage.action?pageId=30770415" target="_blank">
-          <span>Confluence</span>
-        </a>
-      </div>
-      <div>
-        <a href="https://jira.it.volvo.net/secure/Dashboard.jspa" target="_blank">
-          <span>JIRA</span>
-        </a>
+        <div>
+          <a href="https://apps.volvogroup.com/" target="_blank">
+            <span>App Portal</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://confluence.it.volvo.net/pages/viewpage.action?pageId=30770415" target="_blank">
+            <span>Confluence</span>
+          </a>
+        </div>
+        <div>
+          <a href="https://jira.it.volvo.net/secure/Dashboard.jspa" target="_blank">
+            <span>JIRA</span>
+          </a>
+        </div>
       </div>
     `;
       titleBarElement.appendChild(jiraDivElement);

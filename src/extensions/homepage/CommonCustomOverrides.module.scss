@@ -20,16 +20,8 @@
     border-left: none !important;
   }
 
-  div[class^="titleSubcell"],
-  div[class^="adjacentTitleSubcell"] {
+  div[class^="titleAndNavWrapper"],
+  div[class^="logoCell"] {
     display: none !important;
-  }
-
-  div[class*="o365cs-flexPane-overlay"] {
-    background-color: #313131 !important;
-  }
-
-  div[class*="o365cs-flexPane-overlay"] * {
-    color: white !important;
   }
 }
