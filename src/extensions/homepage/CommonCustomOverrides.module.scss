@@ -31,4 +31,8 @@
   div[class^="searchBox"] {
     width: inherit !important;
   }
+
+  a[class*="ms-Nav-link"] {
+    width: 250px !important;
+  }
 }
