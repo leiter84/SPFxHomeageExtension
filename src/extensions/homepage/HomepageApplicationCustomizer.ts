@@ -86,7 +86,9 @@ export default class HomepageApplicationCustomizer extends BaseApplicationCustom
 
       jiraDivElement.innerHTML = `
       <div>
+        <a href="${this.context.pageContext.web.absoluteUrl}">
         <img src="${logoPath}" />
+        </a>
       </div>
       <div>
         <div>
