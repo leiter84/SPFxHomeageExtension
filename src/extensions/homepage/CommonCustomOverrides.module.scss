@@ -23,6 +23,7 @@
     display: none !important;
   }
 
+  /* Quick Launch no to wrap text */
   div[class*="belowSearchBox"],
   nav[class^="ms-Nav"] {
     min-width: 207px !important;
@@ -35,5 +36,9 @@
 
   a[class*="ms-Nav-link"] {
     width: 250px !important;
+  }
+
+  div[class^="CanvasZone"] {
+    max-width: unset !important;
   }
 }
